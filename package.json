@@ -1,0 +1,23 @@
+{
+  "name": "tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build:docs": "tailwind-config-viewer export docs",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projectdiscovery/tailwindcss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/projectdiscovery/tailwindcss/issues"
+  },
+  "homepage": "https://github.com/projectdiscovery/tailwindcss#readme",
+  "devDependencies": {
+    "tailwind-config-viewer": "^1.7.1"
+  }
+}
