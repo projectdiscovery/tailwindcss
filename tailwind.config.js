@@ -18,12 +18,23 @@ const screens = {
   xl: '1800px', // extra large screens
 }
 
+/*
+ * HTML site config.
+ * @see https://github.com/rogden/tailwind-config-viewer
+ */
+const configViewer = {
+  fonts: [
+    "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap",
+  ]
+}
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
+    configViewer,
     screens,
     colors: ({ colors }) => ({
       inherit: colors.inherit,
@@ -297,41 +308,19 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
-      sans: [
-        'ui-sans-serif',
-        'system-ui',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        '"Noto Sans"',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"',
-      ],
-      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
-      mono: [
-        'ui-monospace',
-        'SFMono-Regular',
-        'Menlo',
-        'Monaco',
-        'Consolas',
-        '"Liberation Mono"',
-        '"Courier New"',
-        'monospace',
-      ],
+      primary: ["Inter", "sans-serif"],
     },
     fontSize: {
-      sm: ['0.875rem', { lineHeight: '1.25rem' }],
-      base: ['1rem', { lineHeight: '1.5rem' }],
+      h1: ['2.25rem', { lineHeight: '1.25rem' }], // 36px
+      h2: ['1.5rem', { lineHeight: '1.25rem' }],     // 24px
+
+      lg: ['1.125rem', { lineHeight: '1.5rem' }],   // 18px
+      base: ['1rem', { lineHeight: '1.5rem' }],    // 16px
+      sm: ['0.875rem', { lineHeight: '1.25rem' }] // 14px
     },
     fontWeight: { // Should align with imported font
-      light: '300',
-      normal: '400',
+      light: '400',
+      normal: '500',
       bold: '600',
     },
     gap: ({ theme }) => theme('spacing'),
