@@ -142,16 +142,9 @@ module.exports = {
       cover: 'cover',
       contain: 'contain',
     },
-    blur: {
-      0: '0',
+    blur: { // image blur
       none: '0',
-      sm: '4px',
-      DEFAULT: '8px',
-      md: '12px',
-      lg: '16px',
-      xl: '24px',
-      '2xl': '40px',
-      '3xl': '64px',
+      DEFAULT: '4px',
     },
     brightness: {
       0: '0',
@@ -168,7 +161,7 @@ module.exports = {
     },
     borderColor: ({ theme }) => ({
       ...theme('colors'),
-      DEFAULT: theme('colors.gray.200', 'currentColor'),
+      DEFAULT: 'currentColor',
     }),
     borderOpacity: ({ theme }) => theme('opacity'),
     borderRadius: {
