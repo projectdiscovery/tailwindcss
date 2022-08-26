@@ -37,20 +37,20 @@ module.exports = {
     configViewer,
     screens,
     colors: ({ colors }) => ({
+      black: "#05070A",
+      gray: {
+        dark: colors.zinc[900],
+        DEFAULT: colors.zinc[400],
+        light: colors.zinc[100],
+      },
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
-      black: "#05070A",
       white: colors.white,
       primary: {
         DEFAULT: "#5B88F7",
         dark: "#5C23FF"
       },
-      gray: {
-        light: "#D2D6DF",
-        DEFAULT: "#8C8C8C",
-        dark: "#17191B"
-      }
     }),
     columns: {
       auto: 'auto',
