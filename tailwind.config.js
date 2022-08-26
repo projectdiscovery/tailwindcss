@@ -1,3 +1,6 @@
+const colors = require('tailwindcss/colors')
+
+
 /*
  * Animation timing. Used for delay and duration.
  */
@@ -36,7 +39,7 @@ module.exports = {
   theme: {
     configViewer,
     screens,
-    colors: ({ colors }) => ({
+    colors: {
       black: "#05070A",
       gray: {
         dark: colors.zinc[900],
@@ -51,7 +54,7 @@ module.exports = {
         DEFAULT: "#5B88F7",
         dark: "#5C23FF"
       },
-    }),
+    },
     columns: {
       auto: 'auto',
       1: '1',
