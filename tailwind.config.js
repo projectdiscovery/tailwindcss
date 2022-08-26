@@ -40,8 +40,17 @@ module.exports = {
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
-      black: colors.black,
-      white: colors.white
+      black: "#05070A",
+      white: colors.white,
+      primary: {
+        DEFAULT: "#5B88F7",
+        dark: "#5C23FF"
+      },
+      gray: {
+        light: "#D2D6DF",
+        DEFAULT: "#8C8C8C",
+        dark: "#17191B"
+      }
     }),
     columns: {
       auto: 'auto',
@@ -164,9 +173,7 @@ module.exports = {
     borderOpacity: ({ theme }) => theme('opacity'),
     borderRadius: {
       none: '0px',
-      sm: '0.125rem',
-      DEFAULT: '0.375rem',
-      lg: '0.5rem',
+      DEFAULT: '0.25rem',
       full: '9999px',
     },
     borderSpacing: ({ theme }) => ({
