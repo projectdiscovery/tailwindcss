@@ -4,7 +4,8 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "build:docs": "tailwind-config-viewer export docs"
+    "build:docs": "tailwind-config-viewer export docs",
+    "build:css": "tailwindcss build -o css/style.css"
   },
   "repository": {
     "type": "git",
