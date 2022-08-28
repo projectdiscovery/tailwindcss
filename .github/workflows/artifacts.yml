@@ -11,7 +11,7 @@ jobs:
       - run : |
           yarn
           yarn build:css
-      - uses: actions/checkout@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: "test"
           path: "css/*"
