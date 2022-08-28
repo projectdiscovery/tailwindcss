@@ -1,8 +1,5 @@
-name: React app deployement
-
-on:
-  workflow_dispatch:
-
+name: Generate static css
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
