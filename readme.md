@@ -16,4 +16,6 @@ module.exports = {
 ```
 
 
-## Styling
+## Style Guide
+
+Space between supporting icon and text: 8px;
