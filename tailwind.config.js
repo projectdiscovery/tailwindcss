@@ -27,7 +27,8 @@ const screens = {
  */
 const configViewer = {
   fonts: [
-    "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap",
+    "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap",
+    "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap"
   ]
 }
 
@@ -35,7 +36,7 @@ const configViewer = {
 module.exports = {
   content: [],
   presets: [],
-  darkMode: 'media', // or 'class'
+  darkMode: 'class', // or 'class'
   theme: {
     configViewer,
     screens,
@@ -308,6 +309,7 @@ module.exports = {
     },
     fontFamily: {
       primary: ["Inter", "sans-serif"],
+      mono: ['JetBrains Mono', 'monospace']
     },
     fontSize: {
       h1: ['2.25rem', { lineHeight: '1.25rem' }], // 36px
@@ -318,8 +320,7 @@ module.exports = {
       sm: ['0.875rem', { lineHeight: '1.25rem' }] // 14px
     },
     fontWeight: { // Should align with imported font
-      light: '400',
-      normal: '500',
+      normal: '400',
       bold: '600',
     },
     gap: ({ theme }) => theme('spacing'),
