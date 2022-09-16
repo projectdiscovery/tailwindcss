@@ -48,8 +48,8 @@ module.exports = {
       transparent: colors.transparent,
       white: colors.white,
       primary: {
-        DEFAULT: "#5B88F7",
-        dark: "#5C23FF"
+        light: "#5B88F7",
+        DEFAULT: "#4B4AEB"
       },
     },
     columns: {
@@ -317,7 +317,8 @@ module.exports = {
 
       lg: ['1.125rem', { lineHeight: '1.5rem' }],   // 18px
       base: ['1rem', { lineHeight: '1.5rem' }],    // 16px
-      sm: ['0.875rem', { lineHeight: '1.25rem' }] // 14px
+      sm: ['0.875rem', { lineHeight: '1.25rem' }], // 14px
+      xs: '0.75rem' // 12px
     },
     fontWeight: { // Should align with imported font
       normal: '400',
