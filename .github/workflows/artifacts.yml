@@ -10,8 +10,8 @@ jobs:
           node-version: 12.x
       - run : |
           yarn
-          yarn build:css
+          yarn build:scss
       - uses: actions/upload-artifact@v3
         with:
-          name: "css"
-          path: "css/*"
+          name: "export"
+          path: "export/*"
