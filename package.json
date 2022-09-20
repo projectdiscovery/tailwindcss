@@ -5,7 +5,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "build:docs": "tailwind-config-viewer export docs",
-    "build:scss": "tailwindcss-export-config --config=tailwind.config.js --destination=export --format=scss --quoted-keys=true"
+    "build:scss": "tailwindcss-export-config --config=tailwind.config.js --destination=export/style --format=scss --quoted-keys=true"
   },
   "repository": {
     "type": "git",
