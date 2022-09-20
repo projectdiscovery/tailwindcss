@@ -5,7 +5,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "build:docs": "tailwind-config-viewer export docs",
-    "build:css": "tailwindcss build -o css/style.css; tailwindcss build -o css/style.min.css --minify"
+    "build:scss": "tailwindcss-export-config --config=tailwind.config.js --destination=export --format=scss --quoted-keys=true"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "tailwind-config-viewer": "^1.7.1"
   },
   "dependencies": {
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.1.8",
+    "tailwindcss-export-config": "^4.1.0"
   }
 }
