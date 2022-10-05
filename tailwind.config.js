@@ -722,8 +722,9 @@ module.exports = {
       ...timing
     },
     transitionProperty: {
-      none: 'none',
       DEFAULT: 'all',
+      none: 'none',
+      "border-color": "border-color"
     },
     transitionTimingFunction: { DEFAULT: 'linear' },
     translate: ({ theme }) => ({
