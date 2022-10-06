@@ -25,4 +25,5 @@ input:focus {
 
 pre {
     font-size: inherit !important;
+    font-family: 'JetBrains Mono', monospace;
 }
