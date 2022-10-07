@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const plugin = require('tailwindcss/plugin')
 
 
 /*
@@ -814,5 +815,8 @@ module.exports = {
   ],
   plugins: [
     require('@tailwindcss/typography'),
+    plugin(({ addUtilities, theme }) => addUtilities({
+      '.text-gradient': textGradient(theme),
+    })),
   ],
 }
