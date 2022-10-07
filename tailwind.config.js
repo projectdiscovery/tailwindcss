@@ -85,7 +85,9 @@ module.exports = {
   presets: [],
   darkMode: 'class', // or 'class'
   theme: {
-    typography,
+    extend: {
+      typography,
+    },
     configViewer,
     screens,
     colors: {
