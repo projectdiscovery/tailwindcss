@@ -39,4 +39,4 @@ const codePlugin = ({ className, dataKey } = defaults) => plugin(({ addComponent
     })
 })
 
-export default codePlugin;
+module.exports = codePlugin;
