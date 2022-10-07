@@ -2,6 +2,15 @@ const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
 
 
+const gradient = theme => `linear-gradient(to right, ${theme("colors.primary.light")}, ${theme("colors.primary.DEFAULT")})`;
+
+const textGradient = theme => ({
+  background: gradient(theme),
+  color: "transparent",
+  backgroundClip: "text",
+  whiteSpace: "nowrap",
+})
+
 /*
  * Animation timing. Used for delay and duration.
  */
