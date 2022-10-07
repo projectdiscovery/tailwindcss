@@ -828,6 +828,7 @@ module.exports = {
   ],
   plugins: [
     require('@tailwindcss/typography'),
+    require('./config/code')(),
     plugin(({ addUtilities, theme }) => addUtilities({
       '.text-gradient': textGradient(theme),
     })),
