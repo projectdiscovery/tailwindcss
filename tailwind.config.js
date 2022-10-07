@@ -32,12 +32,50 @@ const configViewer = {
   ]
 }
 
+const typography = ({ theme }) => ({
+  DEFAULT: { // light
+    css: {
+      '--tw-prose-body': theme("colors.gray[500]"), // gray
+      '--tw-prose-headings': '#000', // gray-light
+      ul: {
+        listStyle: "none",
+        padding: 0,
+        li: {
+          padding: 0,
+          margin: 0,
+          "&:before": {
+            padding: 0,
+            content: '"\u2022"',
+            color: "inherit",
+            marginRight: "0.75em",
+            fontSize: 20,
+          }
+        },
+      },
+      h1: { fontSize: theme('fontSize.h1'), ...textGradient(theme) },
+      h2: { fontSize: theme('fontSize.h2') },
+      h3: { fontSize: theme('fontSize.lg') },
+      a: { color: theme('colors.primary.DEFAULT'), textUnderlineOffset: 4 },
+    },
+  },
+  dark: { // dark mode overrides (uses DEFAULT if not overridden)
+    css: {
+      '--tw-prose-body': theme("colors.gray[400]"), // gray
+      '--tw-prose-headings': '#f4f4f5', // gray-light
+      '--tw-prose-links': '#f4f4f5', // gray-light
+      '--tw-prose-bold': '#f4f4f5',
+      a: { color: theme('colors.primary.light'), textUnderlineOffset: 4 },
+    },
+  },
+})
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [],
   presets: [],
   darkMode: 'class', // or 'class'
   theme: {
+    typography,
     configViewer,
     screens,
     colors: {
