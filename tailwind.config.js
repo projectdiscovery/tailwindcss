@@ -392,14 +392,13 @@ module.exports = {
       primary: ["Inter", "sans-serif"],
       mono: ['JetBrains Mono', 'monospace']
     },
-    fontSize: {
-      h1: ['2.25rem', { lineHeight: '1.25rem' }], // 36px
-      h2: ['1.5rem', { lineHeight: '1.25rem' }],     // 24px
-
-      lg: ['1.125rem', { lineHeight: '1.5rem' }],   // 18px
-      base: ['1rem', { lineHeight: '1.5rem' }],    // 16px
-      sm: ['0.875rem', { lineHeight: '1.25rem' }], // 14px
-      xs: '0.75rem' // 12px
+    fontSize: { // [fontSize, lineHeight]
+      h1: ['2.25rem', '2.5rem'],
+      h2: ['1.5rem', "2rem"],
+      lg: ['1.125rem', "1.75rem"],
+      base: ['1rem', "1.5rem"],
+      sm: ['0.875rem', "1.25rem"],
+      xs: ['0.75rem', "1rem"]
     },
     fontWeight: { // Should align with imported font
       normal: '400',
