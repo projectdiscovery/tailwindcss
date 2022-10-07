@@ -131,6 +131,7 @@ module.exports = {
       '7xl': '80rem',
     },
     spacing: {
+      "-1": "-1px",
       0: '0px',
       1: '1px',
       2: '0.125rem', // 2px @ 1rem = 16px
@@ -141,6 +142,7 @@ module.exports = {
       64: '4rem',
       128: '8rem',
       256: '16rem',
+      512: '32rem'
     },
     animation: {
       none: 'none',
