@@ -79,6 +79,34 @@ const typography = ({ theme }) => ({
   },
 })
 
+/*
+ * Code highlighting
+ * Uses data-code-symbol="string" to select strings, etc.
+ */
+const code = ({ theme }) => ({
+  DEFAULT: {
+    text: { color: "black" },
+    string: { color: theme("colors.gray[500]") },
+    comment: { color: theme("colors.gray[400]") },
+    operator: { color: theme("colors.primary.DEFAULT") },
+    keyword: { color: theme("colors.primary.DEFAULT") },
+    key: { color: theme("colors.primary.DEFAULT") },
+    property: { color: theme("colors.primary.DEFAULT") },
+    function: { color: theme("colors.primary.DEFAULT") }
+  },
+  dark: {
+    text: { color: "white" },
+    string: { color: theme("colors.gray[400]") },
+    comment: { color: theme("colors.gray[500]") },
+    operator: { color: theme("colors.primary.light") },
+    keyword: { color: theme("colors.primary.light") },
+    key: { color: theme("colors.primary.light") },
+    property: { color: theme("colors.primary.light") },
+    function: { color: theme("colors.primary.light") }
+  }
+})
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [],
@@ -88,6 +116,7 @@ module.exports = {
     extend: {
       typography,
     },
+    code,
     configViewer,
     screens,
     colors: {
