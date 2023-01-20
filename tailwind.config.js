@@ -88,21 +88,21 @@ const code = ({ theme }) => ({
     text: { color: "black" },
     string: { color: theme("colors.gray[500]") },
     comment: { color: theme("colors.gray[400]") },
-    operator: { color: theme("colors.primary.DEFAULT") },
-    keyword: { color: theme("colors.primary.DEFAULT") },
-    key: { color: theme("colors.primary.DEFAULT") },
-    property: { color: theme("colors.primary.DEFAULT") },
-    function: { color: theme("colors.primary.DEFAULT") }
+    operator: { color: theme("colors.indigo.500") },
+    keyword: { color: theme("colors.indigo.500") },
+    key: { color: theme("colors.indigo.500") },
+    property: { color: theme("colors.indigo.500") },
+    function: { color: theme("colors.indigo.500") }
   },
   dark: {
     text: { color: "white" },
     string: { color: theme("colors.gray[400]") },
     comment: { color: theme("colors.gray[500]") },
-    operator: { color: theme("colors.primary.light") },
-    keyword: { color: theme("colors.primary.light") },
-    key: { color: theme("colors.primary.light") },
-    property: { color: theme("colors.primary.light") },
-    function: { color: theme("colors.primary.light") }
+    operator: { color: theme("colors.indigo.500") },
+    keyword: { color: theme("colors.indigo.500") },
+    key: { color: theme("colors.indigo.500") },
+    property: { color: theme("colors.indigo.500") },
+    function: { color: theme("colors.indigo.500") }
   }
 })
 
