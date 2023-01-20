@@ -130,6 +130,37 @@ module.exports = {
         light: "#5B88F7",
         DEFAULT: "#4B4AEB"
       },
+      indigo: {
+        600: "#4F46E5",
+        500: "#6366F1",
+      },
+      blue: '#638BF1',
+      green: '#10B981',
+      amber: '#F59E0B',
+      header: '#F59E0B',
+      headerBg: '#F59E0B80',
+      background: {
+        light: '#FFFFFF',
+        DEFAULT: '#0A0A0A',
+      },
+      card: {
+        DEFAULT: '#27272A',
+        800: '#27272A',
+      },
+      stroke: {
+        DEFAULT: '#3F3F46',
+        200: '#E4E4E7',
+        700: '#3F3F46',
+      },
+      bodyText: {
+        DEFAULT: '#A1A1AA',
+        400: '#A1A1AA',
+        500: '#71717A',
+      },
+      activeText: {
+        DEFAULT: '#0A0A0A',
+        50: '#FAFAFA',
+      }
     },
     columns: {
       auto: 'auto',
